@@ -1,7 +1,127 @@
 {
-  "last_updated": "2026-07-18T07:09:07+03:00",
-  "total": 44,
+  "last_updated": "2026-07-18T07:20:34+03:00",
+  "total": 54,
   "releases": [
+    {
+      "name": "Kimi K3",
+      "provider": "Moonshot AI / Kimi",
+      "release_date": "2026-07-17",
+      "category": "Reasoning",
+      "modality": "text+image",
+      "open_source": false,
+      "description": "Kimi K3 is Kimi's 2.8T-parameter flagship for long-horizon coding, reasoning, knowledge work, native visual understanding, and 1M-token context. It is notable for its Kimi Delta Attention and Stable LatentMoE architecture; the documentation calls it open-source but states that full weights would be released by July 27, 2026, so the July 10-18 release was not yet an open-weight release.",
+      "source_url": "https://platform.moonshot.ai/docs/guide/kimi-k3-quickstart",
+      "source_name": "Kimi API Platform",
+      "detected_at": "2026-07-18T07:20:34+03:00"
+    },
+    {
+      "name": "GPT-Red",
+      "provider": "OpenAI",
+      "release_date": "2026-07-15",
+      "category": "Reasoning",
+      "modality": "text",
+      "open_source": false,
+      "description": "GPT-Red is OpenAI's automated safety red-teaming model that iteratively attacks GPT models to discover vulnerabilities, especially prompt-injection failures. It is notable because OpenAI describes it as its current best automated safety red-teaming model and says it was used to adversarially train GPT-5.6 for improved robustness.",
+      "source_url": "https://openai.com/index/unlocking-self-improvement-gpt-red/",
+      "source_name": "OpenAI Blog",
+      "detected_at": "2026-07-18T07:20:34+03:00"
+    },
+    {
+      "name": "Inkling",
+      "provider": "Thinking Machines",
+      "release_date": "2026-07-15",
+      "category": "Multimodal",
+      "modality": "text+image+audio",
+      "open_source": true,
+      "description": "Inkling is a large open multimodal model from Thinking Machines with roughly 975B total parameters, 41B active parameters, and a 1M-token context window for text, image, and audio inputs. It is notable as Thinking Machines' first large open model on Hugging Face, with BF16 and NVFP4 variants and day-zero support in Transformers, SGLang, and llama.cpp.",
+      "source_url": "https://huggingface.co/blog/thinkingmachines-inkling",
+      "source_name": "Hugging Face",
+      "detected_at": "2026-07-18T07:20:34+03:00"
+    },
+    {
+      "name": "OvisOCR2",
+      "provider": "ATH-MaaS",
+      "release_date": "2026-07-15",
+      "category": "Multimodal",
+      "modality": "image+text",
+      "open_source": true,
+      "description": "OvisOCR2 is a compact end-to-end page-level document parsing model that converts document page images into Markdown in natural reading order, covering text, formulas, tables, and visual regions. It is notable as an Apache 2.0 OCR/document-understanding model that the card says achieves state-of-the-art results on OmniDocBench and PureDocBench.",
+      "source_url": "https://huggingface.co/ATH-MaaS/OvisOCR2",
+      "source_name": "Hugging Face",
+      "detected_at": "2026-07-18T07:20:34+03:00"
+    },
+    {
+      "name": "Bonsai 27B",
+      "provider": "PrismML",
+      "release_date": "2026-07-14",
+      "category": "Open-source LLM",
+      "modality": "text+image",
+      "open_source": true,
+      "description": "Bonsai 27B is PrismML's multimodal flagship based on Qwen3.6 27B, released in ternary and 1-bit variants with a compact 4-bit vision tower and 262K-token context. It is notable as a 27B-class reasoning, tool-calling, and vision model designed to run on everyday laptops and even phones, with weights released under Apache 2.0.",
+      "source_url": "https://prismml.com/news/bonsai-27b",
+      "source_name": "PrismML",
+      "detected_at": "2026-07-18T07:20:34+03:00"
+    },
+    {
+      "name": "VideoChat3-4B",
+      "provider": "MCG-NJU",
+      "release_date": "2026-07-14",
+      "category": "Video",
+      "modality": "text+video+image",
+      "open_source": true,
+      "description": "VideoChat3-4B is a 4B-parameter video multimodal large language model for generalist video understanding, image/video inputs, and proactive response in streaming video settings. It is notable because the project describes a fully open release of model weights, training code, training strategy, and datasets for reproducible video-MLLM research.",
+      "source_url": "https://huggingface.co/MCG-NJU/VideoChat3-4B",
+      "source_name": "Hugging Face",
+      "detected_at": "2026-07-18T07:20:34+03:00"
+    },
+    {
+      "name": "fal/ideogram-v4-fast",
+      "provider": "fal.ai",
+      "release_date": "2026-07-13",
+      "category": "Image",
+      "modality": "text+image",
+      "open_source": false,
+      "description": "Ideogram 4 Fast is a text-to-image checkpoint developed and released by fal from Ideogram 4, using quantization-aware distillation for 20-step 1024x1024 generation without runtime classifier-free guidance. It is notable as a new fast derivative checkpoint for Ideogram-style image generation, but it is gated under the Ideogram 4 Non-Commercial Model Agreement rather than an open-source license.",
+      "source_url": "https://huggingface.co/fal/ideogram-v4-fast",
+      "source_name": "Hugging Face",
+      "detected_at": "2026-07-18T07:20:34+03:00"
+    },
+    {
+      "name": "fal/ideogram-v4-instant",
+      "provider": "fal.ai",
+      "release_date": "2026-07-13",
+      "category": "Image",
+      "modality": "text+image",
+      "open_source": false,
+      "description": "Ideogram 4 Instant is an eight-step text-to-image checkpoint developed and released by fal from Ideogram 4, published as a BF16 transformer-only release with no runtime classifier-free guidance. It is notable for very low-step 1024x1024 generation, while remaining gated under the Ideogram 4 Non-Commercial Model Agreement.",
+      "source_url": "https://huggingface.co/fal/ideogram-v4-instant",
+      "source_name": "Hugging Face",
+      "detected_at": "2026-07-18T07:20:34+03:00"
+    },
+    {
+      "name": "Xiaomi-Robotics-U0",
+      "provider": "Xiaomi Robotics",
+      "release_date": "2026-07-13",
+      "category": "Multimodal",
+      "modality": "text+image+embodied observations",
+      "open_source": true,
+      "description": "Xiaomi-Robotics-U0 is a 34B world foundation model for text, images, and embodied observations, with released weights supporting T2I, X2I, scene generation, and transfer tasks. It is notable for combining foundation image generation with robot-centric scene and embodied synthesis workflows under an Apache 2.0 model card license.",
+      "source_url": "https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-U0",
+      "source_name": "Hugging Face",
+      "detected_at": "2026-07-18T07:20:34+03:00"
+    },
+    {
+      "name": "UniVR-34B-Planning",
+      "provider": "ByteDance",
+      "release_date": "2026-07-13",
+      "category": "Reasoning",
+      "modality": "image+text",
+      "open_source": true,
+      "description": "UniVR-34B-Planning is a visual reasoning and long-horizon planning model built on Emu3.5 that learns reasoning, physical dynamics, and planning from visual demonstrations. It is notable for releasing a 34B visual planning checkpoint under CC BY 4.0 with capabilities spanning robotic manipulation, tool use, and multimodal understanding.",
+      "source_url": "https://huggingface.co/ByteDance/UniVR-34B-Planning",
+      "source_name": "Hugging Face",
+      "detected_at": "2026-07-18T07:20:34+03:00"
+    },
     {
       "name": "GPT-5.6 Sol",
       "provider": "OpenAI",
@@ -486,5 +606,6 @@
       "source_url": "https://blog.google/products-and-platforms/products/gemini/gemini-3/",
       "source_name": "Google Blog"
     }
-  ]
+  ],
+  "last_checked": "2026-07-18T07:20:34+03:00"
 }
